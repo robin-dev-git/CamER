@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+
+:root {
+    --font-1: "Smooch", cursive;
+    --font-2: "Oswald", sans-serif;
+    --bg-negro: #010101;
+    --color-blanco: #ccc;
+    --color-rojo: #e64539;
+    --color-cafe-oscuro: #321b07;
+    --color-cafe: #82400a;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-2);
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--color-blanco);
+    outline: none;
+    border: none;
+    transition: 0.2s linear;
+}
+
+body {
+    background: var(--bg-negro);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-bottom: 0.2rem solid var(--color-blanco);
+}
+
+header .logo img {
+    width: auto;
+    height: 65px;
+    margin-right: 10px;
+}
+
+header a {
+    color: var(--color-blanco);
+    padding: 10px;
+    font-size: 1rem;
+}
+
+header a:hover {
+    color: var(--color-rojo);
+    font-size: 1.3rem;
+}
+
+.text-logo {
+    color: var(--color-blanco);
+    margin-left: 0.2rem;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.text-logo p {
+    font-family: var(--font-1);
+}
+
+.text-logo p span {
+    font-family: var(--font-1);
+    color: var(--color-rojo);
+}
+
+.text-logo p:hover {
+    color: var(--color-rojo);
+    font-size: 45px;
+}
+
+.text-logo p:hover span {
+    color: var(--color-blanco);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.contenido {
+    background-image: url(../imagenes/cam-fondo.jpg);
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.texto-imagen {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.texto-imagen h1 {
+    font-size: 70px;
+    text-shadow: var(--color-rojo);
+}
+
+.texto-imagen p {
+    font-size: 2rem;
+}
+
+.boton {
+    border-radius: 5rem;
+    width: 100%;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+    background-color: var(--color-rojo);
+    align-items: center;
+}
+
+.boton:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-rojo);
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* .galeria {
+    display: flex;
+    margin: auto;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.galeria img {
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+} */
+
+aside {
+    display: flex;
+    width: 30%;
+    background: -moz-radial-gradient(200px top, ellipse, white, #1162ac, black);
+    justify-content: center;
+    align-items: center;
+}
+
+aside h1 {
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+}
+
+aside h1 span {
+    color: var(--color-rojo);
+}
+
+aside h1:hover {
+    font-size: 1.5rem;
+    color: var(--color-rojo);
+}
+
+aside h1:hover span {
+    color: var(--color-blanco);
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color-cafe-oscuro);
+    height: 500px;
+    padding-top: 40px;
+    width: 100%;
+    color: var(--color-blanco);
+    border-top: 0.2rem solid var(--color-blanco);
+}
+
+.footer-contento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-contento .logo img {
+    width: auto;
+    height: 65px;
+    align-items: center;
+}
+
+/* .footer-contento .fila {
+    width: 80%;
+    height: 65px;
+    align-items: center;
+} */
+
+.fila {
+    display: flex;
+    /* position: relative; */
+    margin-top: 2rem;
+}
+
+.colmuna {
+    width: 33%;
+    padding: 0 29px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 5px 12px;
+}
+
+.colmuna h3 {
+    margin-bottom: 18px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.colmuna p {
+    font-size: 1.2rem;
+    margin: 10px auto;
+    line-height: 28px;
+}
+
+.colmuna .input-texto {
+    width: 100%;
+    border-radius: 15px;
+    padding: 6px 24px;
+    border: 0.1rem solid var(--bg-negro);
+    color: var(--color-cafe-oscuro);
+    background: var(--color-blanco);
+}
+
+.colmuna img {
+    width: 45px;
+    margin: 12px 12px;
+    height: auto;
+}
